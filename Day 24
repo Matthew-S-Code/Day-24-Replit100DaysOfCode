@@ -1,0 +1,19 @@
+import random
+print("Custom Dice")
+print()
+def infinityDice(sides):
+  while True:
+    
+    print("You rolled: ", random.randint(1, sides))
+    rollAgain = input("Roll again, yes or no?: ")
+    if rollAgain == "yes" or rollAgain == "Yes":
+        continue
+    elif rollAgain == "no" or rollAgain == "No":
+      exit()
+    else:
+      break
+
+sides = int(input("How many sides?: "))
+
+infinityDice(sides)
+  
